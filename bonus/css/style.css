@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content {
+    width: 75%;
+    margin: 0 auto;
+    padding: 25px;
+    background-color: rgb(76, 13, 13);
+    color: #fff;
+}
+
+.list-unstyled li {
+    padding: 20px 0;
+    border-bottom: 1px solid lightgrey;
+}
+
+.item-done {
+    text-decoration: line-through;
+}
+
+.input-group {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-field {
+    width: 80%;
+}
+
+.input-item {
+    width: 100%;
+    border: none;
+    padding: 5px 5px;
+}
