@@ -36,16 +36,9 @@ createApp({
         },
 
         deleteItem() {
-            const data = {
-                todoItem: this.todoItem
-            }
 
-            axios.post(this.apiUrl, data, {
-                headers: { 'Content-Type': 'multipart/form-data' }
-            }).then((response) => {
-                this.todoList -= response.data;
-            })
         }
+
     },
 
 

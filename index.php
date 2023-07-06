@@ -31,10 +31,28 @@
                             <hr>
 
                             <ul class="list-unstyled">
+
+                                <!-- cicla gli elementi dell'array -->
                                 <li v-for="(item, index) in todoList" :key="index">
-                                    {{ item.text }}
+                                    <div class="d-flex justify-content-between">
+                                        <div :class="item.done === true ? 'item-done' : '' ">
+                                            {{ item.text }}
+                                        </div>
+                                    </div>
                                 </li>
                             </ul>
+                            <!-- Campo di input per aggiungere nuovo elemento -->
+                            <div class="input-group">
+                                <div class="input-field">
+                                    <input type="text" class="input-item" placeholder="aggiungi elemento" v-model="todoItem" @keyup.enter="updateList">
+                                </div>
+                                <div class="input_button">
+                                    <button class="btn btn-sm btn-success" @click="updateList">
+                                        <i class="fas fa-plus"></i>
+                                        Aggiungi
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

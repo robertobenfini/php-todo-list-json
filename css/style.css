@@ -16,3 +16,23 @@
     padding: 20px 0;
     border-bottom: 1px solid lightgrey;
 }
+
+.item-done {
+    text-decoration: line-through;
+}
+
+.input-group {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-field {
+    width: 80%;
+}
+
+.input-item {
+    width: 100%;
+    border: none;
+    padding: 5px 5px;
+}
