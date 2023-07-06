@@ -30,7 +30,11 @@
                             <h3><strong>La mia ToDoList</strong></h3>
                             <hr>
 
-                            
+                            <ul class="list-unstyled">
+                                <li v-for="(item, index) in todoList" :key="index">
+                                    {{ item.text }}
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>

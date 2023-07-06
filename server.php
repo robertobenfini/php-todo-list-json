@@ -6,5 +6,6 @@
     //lo converto in modo che sia visibile da php come array
     $array = json_decode($string, true);
     
-    
+    //lo converto in modo che sia visibile da vue come array di oggetti
+    echo json_encode($array);
 ?>
