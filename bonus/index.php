@@ -44,7 +44,7 @@
                                             <button class="btn btn-sm me-2" :class="item.done ? 'btn-dark' : 'btn-primary'" @click="changeItemStatus(index)">
                                                 <i class="fas" :class="item.done ? 'fa-x' : 'fa-check'"></i>
                                             </button>
-                                            <button class="btn btn-sm btn-danger" @click="">
+                                            <button class="btn btn-sm btn-danger" @click="deleteItem(index)">
                                                 <i class="fas fa-trash"></i>
                                             </button>
                                         </div>
